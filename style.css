@@ -27,13 +27,13 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  z-index: 0;
+  z-index: 50;
 }
 
 .dropSize {
   display: flex;
   position: relative;
-  z-index: 10;
+  z-index: 60;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -43,7 +43,7 @@
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 10;
+  z-index: 60;
 }
 
 .dropSize-content {
@@ -53,7 +53,7 @@
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 10;
+  z-index: 60;
 }
 
 /* Links inside the dropdown */
