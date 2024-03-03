@@ -14,9 +14,9 @@
   </head>
   <body class="overflow-x-hidden w-screen p-0 m-0">
     <div class="bg-white">
-      <nav class="w-full h-max p-2 z-50 fixed top-0 bg-white">
+      <nav class="w-screen h-max p-2 z-50 fixed top-0 bg-white">
         <div class="max-w-[62%] m-auto">
-          <div class="h-full w-auto flex justify-between items-center">
+          <div class="h-full w-full flex justify-between items-center">
             <div id="logo">
               <img src="src/ATUL logo.png" alt="Atul Logo" class="w-[90%]" />
             </div>
@@ -180,11 +180,11 @@
           </div>
         </div>
       </nav>
-      <main class="w-screen mt-[5%]">
+      <main class="w-screen mt-[5%] 3xl:mt-[2%]">
         <div id="ads" class="w-full flex relative duration-1000 z-0">
-          <img src="src/Mask Group 1.jpg" alt="Mask Group" class="w-full z-0" />
-          <img src="src/i1.jpg" alt="Mask Group" class="w-full" />
-          <img src="src/i2.jpg" alt="Mask Group" class="w-full" />
+          <img src="src/Mask Group 1.jpg" alt="Mask Group" class="w-full" />
+          <img src="src/Mask Group 1.jpg" alt="Mask Group" class="w-full" />
+          <img src="src/Mask Group 1.jpg" alt="Mask Group" class="w-full" />
         </div>
         <div class="z-10 bg-gray-100 pl-5 flex justify-between">
           <button
@@ -295,17 +295,17 @@
             </div>
           </div>
           <div class="w-[96%] mx-auto overflow-x-hidden">
-          <div
-            id="productImages0"
-            class="flex relative duration-500 ease-in-out"
-          >
-            <!-- <img src="src/21.jpg" class="h-full scale-75 relative 2xl:top-24" />
+            <div
+              id="productImages0"
+              class="flex relative duration-500 ease-in-out"
+            >
+              <!-- <img src="src/21.jpg" class="h-full scale-75 relative 2xl:top-24" />
             
             <img src="src/3.jpg" class="scale-75" />
             
             <img src="src/4.jpg" class="h-full scale-75 relative 2xl:top-24" /> -->
+            </div>
           </div>
-        </div>
           <div class="flex justify-around mx-28">
             <button onclick="changePreviousImage(0)">
               <img
@@ -356,14 +356,17 @@
             </div>
           </div>
           <div class="w-[99%] mx-auto overflow-x-hidden">
-          <div id="productImages1" class="flex relative duration-500 ease-in-out gap-24">
-            <!-- <img src="src/21.jpg" class="h-full scale-75 relative 2xl:top-24" />
+            <div
+              id="productImages1"
+              class="flex relative duration-500 ease-in-out gap-24"
+            >
+              <!-- <img src="src/21.jpg" class="h-full scale-75 relative 2xl:top-24" />
             
             <img src="src/3.jpg" class="scale-75" />
             
             <img src="src/4.jpg" class="h-full scale-75 relative 2xl:top-24" /> -->
+            </div>
           </div>
-        </div>
           <div class="flex justify-around mx-28">
             <button onclick="changePreviousImage(1)">
               <img
@@ -461,55 +464,92 @@
                 <h1 class="text-[2.5rem] font-normal">ATUL GLANCE</h1>
               </div>
               <div id="aboutLogo" class="flex h-1/4 my-auto">
-                <img src="src/Group 2220.png" class="h-full scale-75" />
-                <img src="src/Group 2221.png" class="h-full scale-75" />
+                <button onclick="lessBoxes()">
+                  <img src="src/Group 2220.png" class="h-full scale-75" />
+                </button>
+                <button onclick="moreBoxes()">
+                  <img src="src/Group 2221.png" class="h-full scale-75" />
+                </button>
               </div>
             </div>
-            <div id="aboutBoxes" class="grid grid-cols-2">
-              <div
-                id="box1"
-                class="m-3 ml-0 border border-gray-300 py-7 px-5 border-dashed"
-              >
-                <h3 class="text-red-600 text-xl">1 MILLION+ VEHICLES</h3>
-                <h5 class="text-gray-700 my-1">PLYING THE ROADS</h5>
-                <p class="text-gray-500 mt-7 text-sm tracking-wide">
-                  Vehicles are redefining the three wheeler industry as one of
-                  the sturdiest, most reliable and low cost vehicles across the
-                  globe.
-                </p>
+            <div id="aboutBoxes" class="w-[62vw] overflow-hidden mx-auto">
+              <div id="insideAboutBoxes" class="flex relative duration-1000">
+              <div class="section1">
+                <div
+                  id="box1"
+                  class="m-2 min-w-[30vw] h-[48%] border border-gray-300 py-7 px-5 border-dashed"
+                >
+                  <h3 class="text-red-600 text-xl">1 MILLION+ VEHICLES</h3>
+                  <h5 class="text-gray-700 my-1">PLYING THE ROADS</h5>
+                  <p class="text-gray-500 mt-7 text-sm tracking-wide">
+                    Vehicles are redefining the three wheeler industry as one of
+                    the sturdiest, most reliable and low cost vehicles across
+                    the globe.
+                  </p>
+                </div>
+                <div
+                  id="box2"
+                  class="m-2 min-w-[30vw] border h-[48%] border-gray-300 py-7 px-5 border-dashed"
+                >
+                  <h3 class="text-red-600 text-xl">15</h3>
+                  <h5 class="text-gray-700 my-1">MODELS</h5>
+                  <p class="text-gray-500 mt-7 text-sm tracking-wide">
+                    A wide range of cargo and passenger vehicles that deliver
+                    power, great mileage, sturdy built and easy maneuverability.
+                  </p>
+                </div>
               </div>
-              <div
-                id="box2"
-                class="m-3 mr-0 border border-gray-300 py-7 px-5 border-dashed"
-              >
-                <h3 class="text-red-600 text-xl">15</h3>
-                <h5 class="text-gray-700 my-1">MODELS</h5>
-                <p class="text-gray-500 mt-7 text-sm tracking-wide">
-                  A wide range of cargo and passenger vehicles that deliver
-                  power, great mileage, sturdy built and easy maneuverability.
-                </p>
+              <div class="section1">
+                <div
+                  id="box3"
+                  class="m-2 min-w-[30vw] h-[48%] border border-gray-300 py-7 px-5 border-dashed"
+                >
+                  <h3 class="text-red-600 text-xl">AMONG TOP 5</h3>
+                  <h5 class="text-gray-700 my-1">
+                    3 WHEELER COMPANIES IN INDIA
+                  </h5>
+                  <p class="text-gray-500 mt-7 text-sm tracking-wide">
+                    Atul is one of the youngest & fastest growing companies in
+                    the sector.
+                  </p>
+                </div>
+                <div
+                  id="box4"
+                  class="m-2 min-w-[30vw] h-[48%] border border-gray-300 py-7 px-5 border-dashed"
+                >
+                  <h3 class="text-red-600 text-xl">INR 968.13 CR</h3>
+                  <h5 class="text-gray-700 my-1">MARKET CAP</h5>
+                  <p class="text-gray-500 mt-7 text-sm tracking-wide">
+                    Market Capitalization as on March 31, 2018
+                  </p>
+                </div>
               </div>
-              <div
-                id="box3"
-                class="m-3 ml-0 border border-gray-300 py-7 px-5 border-dashed"
-              >
-                <h3 class="text-red-600 text-xl">AMONG TOP 5</h3>
-                <h5 class="text-gray-700 my-1">3 WHEELER COMPANIES IN INDIA</h5>
-                <p class="text-gray-500 mt-7 text-sm tracking-wide">
-                  Atul is one of the youngest & fastest growing companies in the
-                  sector.
-                </p>
+              <div class="section1">
+                <div
+                  id="box3"
+                  class="m-2 min-w-[30vw] h-[48%] border border-gray-300 py-7 px-5 border-dashed"
+                >
+                  <h3 class="text-red-600 text-xl">AMONG TOP 5</h3>
+                  <h5 class="text-gray-700 my-1">
+                    3 WHEELER COMPANIES IN INDIA
+                  </h5>
+                  <p class="text-gray-500 mt-7 text-sm tracking-wide">
+                    Atul is one of the youngest & fastest growing companies in
+                    the sector.
+                  </p>
+                </div>
+                <div
+                  id="box4"
+                  class="m-2 min-w-[30vw] h-[48%] border border-gray-300 py-7 px-5 border-dashed"
+                >
+                  <h3 class="text-red-600 text-xl">INR 968.13 CR</h3>
+                  <h5 class="text-gray-700 my-1">MARKET CAP</h5>
+                  <p class="text-gray-500 mt-7 text-sm tracking-wide">
+                    Market Capitalization as on March 31, 2018
+                  </p>
+                </div>
               </div>
-              <div
-                id="box4"
-                class="m-3 mr-0 border border-gray-300 py-7 px-5 border-dashed"
-              >
-                <h3 class="text-red-600 text-xl">INR 968.13 CR</h3>
-                <h5 class="text-gray-700 my-1">MARKET CAP</h5>
-                <p class="text-gray-500 mt-7 text-sm tracking-wide">
-                  Market Capitalization as on March 31, 2018
-                </p>
-              </div>
+            </div>
             </div>
           </div>
         </div>

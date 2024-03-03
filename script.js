@@ -78,5 +78,27 @@ imageAdd(1);
 // }
 
 var y = [-1, -1];
-nextProduct(0);
-nextProduct(1);
+
+var m = 0;
+
+function moreBoxes() {
+    if(m < 1){
+        document.getElementById("insideAboutBoxes").style.right = '31vw';
+        m++;
+        console.log("yoo")
+    }
+    else {
+        lessBoxes()
+    }
+}
+
+function lessBoxes() {
+    if(m > 0){
+        document.getElementById("insideAboutBoxes").style.right = '0vw';
+        m--;
+    }
+}
+
+setInterval(() => {
+    moreBoxes();
+}, 3000);

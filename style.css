@@ -91,3 +91,16 @@
   filter: invert(1);
 }
 
+@keyframes boxes {
+  from {
+    left: 30vw;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+#insideAboutBoxes {
+  animation-name: boxes;
+  animation-duration:2000ms;
+}
