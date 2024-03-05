@@ -1,11 +1,11 @@
 function displayNextImg() {
   x = x === 2 ? 0 : x + 1;
-  ads.style.right = `${x * 100}%`;
+  ads.style.right = `${x * 100}vw`;
 }
 
 function displayPreviousImg() {
   x = x < 0 ? 2 : x - 1;
-  ads.style.right = `${x * 100}%`;
+  ads.style.right = `${x * 100}vw`;
 }
 
 function startTimer() {
@@ -102,3 +102,9 @@ function lessBoxes() {
 setInterval(() => {
     moreBoxes();
 }, 3000);
+
+function show() {
+  console.log("yoo")
+  yo = document.getElementsByClassName("menu")[0];
+  yo.style.display = (yo.style.display === 'block') ? 'none' : 'block';
+}

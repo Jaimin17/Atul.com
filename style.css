@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
 
 * {
   font-family: "Roboto", sans-serif;
@@ -42,7 +42,7 @@
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 60;
 }
 
@@ -52,25 +52,36 @@
   left: 100%;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 60;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a, .dropSize-content a {
+.dropdown-content a,
+.dropSize-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
+.options {
+  display: none;
+}
+
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropSize:hover .dropSize-content {display: block;}
+.dropSize:hover .dropSize-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
@@ -102,5 +113,23 @@
 
 #insideAboutBoxes {
   animation-name: boxes;
-  animation-duration:2000ms;
+  animation-duration: 2000ms;
+}
+
+@tailwind utilities;
+
+.options {
+  display: none;
+}
+
+.optionsBtn {
+  display: none;
+}
+
+.dropdown:hover .options { display: flex;}
+
+.dropSize:hover .optionsBtn { display: flex;}
+
+.menu {
+  display: none;
 }
