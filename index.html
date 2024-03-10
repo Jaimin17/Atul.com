@@ -16,10 +16,10 @@
 
 <body class="overflow-x-hidden w-screen p-0 m-0">
   <div class="bg-white">
-    <nav class="w-screen h-max p-2 z-50 fixed top-0 bg-white">
-      <div class="max-w-[62%] m-auto">
+       <nav id="navbar1" class="hidden lg:flex items-center justify-between w-screen h-max z-50 fixed top-0 bg-white">
+      <div class="max-w-5xl m-auto min-w-[60rem]">
         <div class="h-full w-full flex justify-between items-center">
-          <div id="logo">
+          <div id="logo" class="w-[70px]">
             <img src="src/ATUL logo.png" alt="Atul Logo" class="w-[90%]" />
           </div>
           <div id="nav-items" class="flex">
@@ -164,6 +164,264 @@
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </nav>
+    <nav id="navbar2" class="block lg:hidden items-center justify-between w-screen h-max z-50 fixed top-0 bg-white">
+      <div class="max-w-[85%] m-auto ">
+        <div class="w-full flex justify-between items-center">
+          <div id="logo" class="w-[70px] py-1">
+            <img src="src/ATUL logo.png" alt="Atul Logo" class="w-[90%]" />
+          </div>
+          <div class="flex">
+            <button onclick="show()">
+              <img
+                src="src/burger-menu.svg"
+                class="bg-black w-10 px-2 py-1"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="menu w-[85%] mx-auto">
+        <div id="nav-items" class="flex">
+          <ul class="flex flex-col w-full text-sm font-normal bg-amber-950">
+            <li class="dropdown">
+              <button
+                class="dropbtn flex justify-between w-full px-4 py-2 text-white"
+              >
+                <span>About Us</span>
+                <img src="src/plus.svg" class="w-2" />
+              </button>
+              <div class="options text-white w-[96%] mx-auto flex flex-col">
+                <a href="/">Profile</a>
+            <hr class="border-gray-500">
+                <a href="/">Heritage</a>
+            <hr class="border-gray-500">
+                <a href="/">Management</a>
+            <hr class="border-gray-500">
+                <a href="/">Infrastructure</a>
+            <hr class="border-gray-500">
+                <a href="/">Future</a>
+            <hr class="border-gray-500">
+                <a href="/">Code of Conduct</a>
+            <hr class="border-gray-500">
+              </div>
+            </li>
+            <hr class="border-gray-500">
+            <li class="dropdown">
+              <button
+                class="dropbtn flex justify-between w-full px-4 py-2 text-white"
+              >
+                Products
+                <img src="src/plus.svg" class="w-2" />
+              </button>
+              <div class="options text-white w-[96%] mx-auto flex flex-col">
+                <a href="/">ATUL Elite</a>
+            <hr class="border-gray-500">
+                <a href="/">ATUL Gem</a>
+            <hr class="border-gray-500">
+                <a href="/">ATUL Gemi</a>
+            <hr class="border-gray-500">
+                <a href="/">ATUL RIK</a>
+            <hr class="border-gray-500">
+                <a href="/">ATUL Smart</a>
+            <hr class="border-gray-500">
+                <a href="/">Application</a>
+            <hr class="border-gray-500">
+              </div>
+            </li>
+            <hr class="border-gray-500">
+            <li class="dropdown">
+              <button
+                id="item-1"
+                class="dropbtn flex justify-between w-full px-4 py-2 text-white"
+              >
+                Investor
+                <img src="src/plus.svg" class="w-2" />
+              </button>
+              <div
+                id="content-1"
+                class="options text-white w-[96%] mx-auto flex flex-col"
+              >
+                <div class="dropSize flex flex-col">
+                  <button
+                    class="dropSizebtn flex justify-between w-full px-4 py-2 text-white"
+                  >
+                    Investor Services
+                    <img src="src/plus.svg" class="w-2" />
+                  </button>
+            <hr class="border-gray-500">
+                  <div class="optionsBtn flex flex-col w-[92%] mx-auto">
+                    <a href="/">Email Details</a>
+            <hr class="border-gray-500">
+                    <a href="/">Contact Details</a>
+            <hr class="border-gray-500">
+                    <a href="/">KMP Details</a>
+            <hr class="border-gray-500">
+                  </div>
+                </div>
+                <div class="dropSize flex flex-col">
+                  <button
+                    class="dropSizebtn flex justify-between w-full px-4 py-2 text-white"
+                  >
+                    Financial Results/Reports
+                    <img src="src/plus.svg" class="w-2" />
+                  </button>
+            <hr class="border-gray-500">
+                  <div class="optionsBtn flex flex-col w-[92%] mx-auto">
+                    <a href="/">Annual Report</a>
+            <hr class="border-gray-500">
+                    <a href="/">Financial Results</a>
+            <hr class="border-gray-500">
+                    <a href="/">FS of Subsiduaries & Others</a>
+            <hr class="border-gray-500">
+                  </div>
+                </div>
+                <a href="/">Final Letter of Offer</a>
+            <hr class="border-gray-500">
+                <a href="/">Unclaimed Dividend / IEPF</a>
+            <hr class="border-gray-500">
+                <a href="/">Shareholding Pattern</a>
+            <hr class="border-gray-500">
+                <div class="dropSize flex flex-col">
+                  <button class="dropSizebtn flex justify-between w-full px-4 py-2 text-white">
+                    Announcements and Others
+                    <img src="src/plus.svg" class="w-2" />
+                  </button>
+            <hr class="border-gray-500">
+                  <div class="optionsBtn flex flex-col w-[92%] mx-auto">
+                    <a href="/">Announcements</a>
+            <hr class="border-gray-500">
+                    <a href="/">Advertisement in Newspapers</a>
+            <hr class="border-gray-500">
+                    <a href="/">Secretarial Compliance Report</a>
+            <hr class="border-gray-500">
+                    <a href="/">Credit Rating</a>
+            <hr class="border-gray-500">
+                  </div>
+                </div>
+                <a href="/">Corporate Presentation</a>
+            <hr class="border-gray-500">
+                <a href="/">Corporate Governance</a>
+            <hr class="border-gray-500">
+                <div class="dropSize flex flex-col">
+                  <button class="dropSizebtn flex justify-between w-full px-4 py-2 text-white">
+                    Business and Management
+                    <img src="src/plus.svg" class="w-2" />
+                  </button>
+            <hr class="border-gray-500">
+                  <div class="optionsBtn flex flex-col w-[92%] mx-auto">
+                    <a href="/">Business</a>
+            <hr class="border-gray-500">
+                    <a href="/">Management</a>
+            <hr class="border-gray-500">
+                  </div>
+                </div>
+                <a href="/">Preferential Issue</a>
+            <hr class="border-gray-500">
+                <a href="/">KYC Update</a>
+            <hr class="border-gray-500">
+              </div>
+            </li>
+            <hr class="border-gray-500">
+            <li class="dropdown">
+              <button
+                id="item-1"
+                class="dropbtn flex justify-between w-full px-4 py-2 text-white"
+              >
+                Dealer Locator
+                <img src="src/plus.svg" class="w-2" />
+              </button>
+            <hr class="border-gray-500">
+              <div
+                id="content-1"
+                class="options text-white w-[96%] mx-auto flex flex-col"
+              >
+                <a href="/">India</a>
+            <hr class="border-gray-500">
+                <a href="/">International</a>
+            <hr class="border-gray-500">
+                <a href="/">Online Application Form</a>
+            <hr class="border-gray-500">
+                <a href="/">Download Application Form</a>
+            <hr class="border-gray-500">
+              </div>
+            </li>
+            <hr class="border-gray-500">
+            <li class="dropdown">
+              <button
+                id="item-1"
+                class="dropbtn flex justify-between w-full px-4 py-2 text-white"
+              >
+                News & Events
+                <img src="src/plus.svg" class="w-2" />
+              </button>
+            <hr class="border-gray-500">
+              <div
+                id="content-1"
+                class="options text-white w-[96%] mx-auto flex flex-col"
+              >
+                <a href="/">News</a>
+            <hr class="border-gray-500">
+                <a href="/">Media Releases</a>
+            <hr class="border-gray-500">
+                <a href="/">Corporate Videos</a>
+            <hr class="border-gray-500">
+              </div>
+            </li>
+            <hr class="border-gray-500">
+            <li class="dropdown">
+              <button
+                id="item-1"
+                class="dropbtn flex justify-between w-full px-4 py-2 text-white"
+              >
+                Careers
+                <img src="src/plus.svg" class="w-2" />
+              </button>
+            <hr class="border-gray-500">
+              <div
+                id="content-1"
+                class="options text-white w-[96%] mx-auto flex flex-col"
+              >
+                <a href="/">Human Capital Philosophy</a>
+            <hr class="border-gray-500">
+                <a href="/">Why Atul</a>
+            <hr class="border-gray-500">
+                <div class="dropSize flex flex-col">
+                  <button class="dropSizebtn flex justify-between w-full px-4 py-2 text-white">
+                    Life @ Atul
+                    <img src="src/plus.svg" class="w-2" />
+                  </button>
+            <hr class="border-gray-500">
+                  <div class="optionsBtn flex flex-col w-[92%] mx-auto">
+                    <a href="/">Work Life Balance</a>
+            <hr class="border-gray-500">
+                    <a href="/">learning and Development</a>
+            <hr class="border-gray-500">
+                    <a href="/">Awarding and Rewards</a>
+            <hr class="border-gray-500">
+                    <a href="/">Employee Engagement</a>
+            <hr class="border-gray-500">
+                  </div>
+                </div>
+                <a href="/">Meet Our People</a>
+            <hr class="border-gray-500">
+                <a href="/">Current Openings</a>
+            <hr class="border-gray-500">
+                <a href="/">Caution Notion "Recruitment Fraud"</a>
+            <hr class="border-gray-500">
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                class="dropbtn flex justify-between w-full px-4 py-2 text-white"
+              >
+                <a href="/">Contact Us</a>
+              </button>
+            <hr class="border-gray-500">
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -399,7 +657,7 @@
         </div>
       </div>
       <div id="aboutContainer" class="w-full">
-        <div id="about" class="mx-72 p-4 pt-32 pb-10">
+        <div id="about" class="mx-72 p-4 pb-10">
           <div id="aboutTop" class="flex justify-between">
             <div id="aboutTitle">
               <h3 class="font-normal text-xl space-x-5 text-red-500">
