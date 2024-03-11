@@ -517,55 +517,112 @@
 
 
 
-        <section id="slider" class="pt-5 w-full">
+               <section id="slider" class="pt-5 w-full">
           <div class="container mx-auto">
             <div class="slider">
-              <div class="owl-carousel">
+              <div id="owl-carousel1" class="owl-carousel cargoSlide">
                 <div class="slider-card">
+                  <div class="number">1</div>
                   <div class="flex justify-center items-center mb-4">
                     <img src="src/33.png" alt="">
                   </div>
                 </div>
                 <div class="slider-card">
+                  <div class="number">2</div>
                   <div class="flex justify-center items-center mb-4">
                     <img src="src/1.png" alt="">
                   </div>
                 </div>
                 <div class="slider-card">
+                  <div class="number">3</div>
                   <div class="flex justify-center items-center mb-4">
                     <img src="src/3.png" alt="">
                   </div>
                 </div>
                 <div class="slider-card">
+                  <div class="number">4</div>
                   <div class="flex justify-center items-center mb-4">
                     <img src="src/1.png" alt="">
                   </div>
                 </div>
                 <div class="slider-card">
+                  <div class="number">5</div>
                   <div class="flex justify-center items-center mb-4">
                     <img src="src/3.png" alt="">
                   </div>
                 </div>
               </div>
+              <div class="carousel-content" id="element1">
+                <h2 class="text-sm sm:text-lg lg:text-2xl text-center font-normal">
+                  BS6 - GEM CNG Aqua 6F cargo (1st)
+                </h2>
+                <div class="flex pt-1">
+                  <p class="inline-block text-center font-normal ml-auto mr-3 text-xs text-red-500 hover:cursor-pointer">
+                    VIEW MORE
+                  </p>
+                  <img src="src/Path 101.svg" class="mr-auto" />
+                </div>
+              </div>
+              <div class="carousel-content" id="element2">
+              
+                  <h2 class="text-sm sm:text-lg lg:text-2xl text-center font-normal">
+                    BS6 - GEM CNG Aqua 6F cargo  (2nd)
+                  </h2>
+                  <div class="flex pt-1">
+                    <p class="inline-block text-center font-normal ml-auto mr-3 text-xs text-red-500 hover:cursor-pointer">
+                      VIEW MORE
+                    </p>
+                    <img src="src/Path 101.svg" class="mr-auto" />
+                  </div>
+             
+              </div>
+              <div class="carousel-content" id="element3">
+                <h2 class="text-sm sm:text-lg lg:text-2xl text-center font-normal">
+                  BS6 - GEM CNG Aqua 6F cargo  (3rd)
+                </h2>
+                <div class="flex pt-1">
+                  <p class="inline-block text-center font-normal ml-auto mr-3 text-xs text-red-500 hover:cursor-pointer">
+                    VIEW MORE
+                  </p>
+                  <img src="src/Path 101.svg" class="mr-auto" />
+                </div>
+              </div>
+              <div class="carousel-content" id="element4">
+                <h2 class="text-sm sm:text-lg lg:text-2xl text-center font-normal">
+                  BS6 - GEM CNG Aqua 6F cargo   (4th)
+                </h2>
+                <div class="flex pt-1">
+                  <p class="inline-block text-center font-normal ml-auto mr-3 text-xs text-red-500 hover:cursor-pointer">
+                    VIEW MORE
+                  </p>
+                  <img src="src/Path 101.svg" class="mr-auto" />
+                </div>
+              </div>
+              <div class="carousel-content" id="element5">
+                <h2 class="text-sm sm:text-lg lg:text-2xl text-center font-normal">
+                  BS6 - GEM CNG Aqua 6F cargo   (5th)
+                </h2>
+                <div class="flex pt-1">
+                  <p class="inline-block text-center font-normal ml-auto mr-3 text-xs text-red-500 hover:cursor-pointer">
+                    VIEW MORE
+                  </p>
+                  <img src="src/Path 101.svg" class="mr-auto" />
+                </div>
+              </div>
+              <div class="carousel-content" id="element6">
+                <h2 class="text-sm sm:text-lg lg:text-2xl text-center font-normal">
+                  BS6 - GEM CNG Aqua 6F cargo    (6th)
+                </h2>
+                <div class="flex pt-1">
+                  <p class="inline-block text-center font-normal ml-auto mr-3 text-xs text-red-500 hover:cursor-pointer">
+                    VIEW MORE
+                  </p>
+                  <img src="src/Path 101.svg" class="mr-auto" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
-
-
-
-
-        <div id="productfooter" class="items-center ">
-          <h2 class="text-2xl text-center font-normal">
-            BS6 - GEM CNG Aqua 6F cargo
-          </h2>
-          <div class="flex pt-1">
-            <p class="inline-block text-center font-normal ml-auto mr-3 text-xs text-red-500">
-              VIEW MORE
-            </p>
-            <img src="src/Path 101.svg" class="mr-auto" />
-          </div>
-        </div>
-      </div>
       <!-- </div> -->
       <div id="productContainer2" class="px-5 py-14 bg-gray-100 flex items-center justify-center flex-col">
         <div id="productTop2"
@@ -1101,6 +1158,38 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="owl.carousel.min.js"></script>
   <script>
+  // Owlcarousel1
+  $(document).ready(function () {
+    var owl = $("#owl-carousel1");
+
+    owl.owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      center: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        700: {
+          items: 3,
+        },
+      },
+    });
+
+    owl.on('changed.owl.carousel', function(event) {
+      // Get the current center item
+      var currentItem = event.item.index -2;
+      console.log(currentItem);
+      // Toggle class for the centered element
+      $(".carousel-content").removeClass("active");
+      $("#element" + currentItem).addClass("active");
+    });
+  });
+    
     // Owlcarousel
     $(document).ready(function () {
       $(".owl-carousel").owlCarousel({
